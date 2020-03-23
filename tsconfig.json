@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "ed-test-lib": ["ed-test-lib/src"],
+      "my-consumer": ["my-consumer/src"]
+    }
+  }
+}

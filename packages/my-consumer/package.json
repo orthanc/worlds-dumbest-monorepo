@@ -1,0 +1,26 @@
+{
+  "name": "my-consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json --rootDir src"
+  },
+  "dependencies": {
+    "ed-test-lib": "^1.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.2",
+    "ts-node": "^8.7.0",
+    "typescript": "^3.8.3"
+  }
+}

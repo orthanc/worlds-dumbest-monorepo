@@ -1,0 +1,23 @@
+{
+  "name": "ed-test-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json --rootDir src"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "winston": "^3.2.1"
+  }
+}
